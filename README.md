@@ -14,7 +14,8 @@ To execute this project, follow the below steps:
 gcloud beta artifacts repositories create $REPOSITORY \
  --repository-format=docker \
  --location=$REGION
-  9. Push docker image to GCP Artifact Registry repo: docker push $REGION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE
+  9. Push docker image to GCP Artifact Registry repo: docker push $REGION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE (If Permission denied, execute the following command with the correct region: gcloud auth configure-docker \
+    us-west2-docker.pkg.dev)
   10. Upload custom model: gcloud beta ai models upload \
   --region=$REGION \
   --display-name=$MODEL_NAME \
