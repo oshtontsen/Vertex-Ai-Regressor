@@ -4,7 +4,7 @@ This project serves as a base template to deploy a model on Vertex AI via custom
 To execute this project, follow the below steps:
   1. Add the proper credentials and project specifications in gcs.env.
   2. Install docker desktop or authenticate yourself via CLI
-  3. . build.sh (Restart Docker if you encounter error: "failed to copy files: copy file range failed: no space left on device
+  3. . build.sh (Execute docker system prune -a OR Restart Docker if you encounter error: "failed to copy files: copy file range failed: no space left on device
 ")
   4. Verify that the docker images was created using: docker images
   5. . run.sh
